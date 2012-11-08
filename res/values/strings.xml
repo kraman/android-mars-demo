@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">MissionToMars</string>
+    <string name="title_volunteer_detail">volunteer Detail</string>
+    <string name="title_volunteer_list">volunteers</string>
+
+</resources>

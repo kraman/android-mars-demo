@@ -1,0 +1,238 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".volunteerDetailFragment" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tableRowEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/volunteer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px" >
+
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/volunteer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowMarsBorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px" >
+
+            <TextView
+                android:id="@+id/lblMarsBorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Born on Mars?"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/mars_born"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableAvoidPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px" >
+
+            <TextView
+                android:id="@+id/lblAvoidPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prefer avoiding people?"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ProgressBar
+                android:id="@+id/avoid_people"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="10"
+                android:paddingLeft="10px"
+                android:progress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableLockedUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px" >
+
+            <TextView
+                android:id="@+id/lblLockedUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like being locked up\n for a loooong time?"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ProgressBar
+                android:id="@+id/locked_up"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="10"
+                android:paddingLeft="10px"
+                android:progress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRoundTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px" >
+
+            <TextView
+                android:id="@+id/lblRoundTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Round-trip important?"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ProgressBar
+                android:id="@+id/round_trip"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="10"
+                android:paddingLeft="10px"
+                android:progress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableColorBrown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px" >
+
+            <TextView
+                android:id="@+id/lblColorBrown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Love the color brown?"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ProgressBar
+                android:id="@+id/like_brown"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="10"
+                android:paddingLeft="10px"
+                android:progress="0" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowLatLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15px" >
+
+            <TextView
+                android:id="@+id/lblLatLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/lat_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="45px" >
+
+            <TextView
+                android:id="@+id/lblScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowPercentile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblPercentile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Percentile"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/percentile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
